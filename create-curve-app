@@ -3,5 +3,5 @@ import os
 print(f'{f.LIGHTBLUE_EX}Create Curve App')
 project_name = input('What\'s the name of the project? > ')
 os.system(f'mkdir {project_name}')
-os.system(f'echo %h1 My Curve App > {project_name}/app.crv')
+os.system(f'echo %h1 "My Curve App" > {project_name}/app.crv')
 os.system(f'echo #Enter Config Here! Example on github :) {project_name}/config.yaml')
