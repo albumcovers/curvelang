@@ -25,7 +25,7 @@ Then your `app.crv` file is your editable code.
 
 ### Running Files
 
-To run files, use python. 
+To run files, use python. Download the `curve` file from the directory above and put it in the same directory as your app.
 
 Linux/Mac:
 ```
@@ -47,3 +47,6 @@ py curve app.crv
 - [ ] Add CSS Dependencies via config file
 - [ ] More config stuff in general
 - [ ] Better Documentation
+- [ ] Add option to disable opening in browser in config
+- [ ] Add option for live server in config
+      
