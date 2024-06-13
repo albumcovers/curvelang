@@ -84,6 +84,14 @@ In Curve is:
 ==> x.on("click", func{ console.log("Hello, World!") })
 ```
 
+### Styles
+
+Styles are normal CSS. Shorthand coming soon!
+
+```
+--> #myContainer { color: red; }
+```
+
 ### Create Curve App
 
 Running `py create-curve-app` will bring up a menu to create a curve app in a new directory.
