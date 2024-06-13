@@ -1,0 +1,9 @@
+%h1 "To-do App"
+%p "Welcome to my basic todo app."
+%ul " " :id=myTodos
+%button "Create To-do" :id=todoButton
+
+# Scripting
+==> $todoButton = id("todoButton")
+==> todoButton.on("click", func{ createTodo() })
+==> $createTodo = func{ $todoList = id("myTodos"); $todo = prompt("What's needed to be doing?"); todoList.value += `<li>${todo}</li>` }
