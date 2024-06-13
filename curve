@@ -25,6 +25,8 @@ for line in file.readlines():
 
         if element_name != 'link' or element_name != 'br' or element_name != 'hr':
             code += f'<{element_name} {attribut_es}>{content}</{element_name}>'
+    elif line.startswith('-->'):
+        code += f"<style>{line.replace("-->", "")}</style>"
     elif line.startswith('==>'):
         line=line.strip()
         line=line.replace('==>','')
