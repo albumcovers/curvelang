@@ -57,6 +57,33 @@ For comments, simply put a `#`.
 # This is a comment!
 ```
 
+### Scripting
+
+The `==>` indicator in Curve indicates scripting. Since Curve was designed to be easy to understand for beginner programmers, there are many JavaScript shorthands.
+Here's an example in JavaScript:
+```
+let x = document.querySelector("#myElement");
+x.innerHTML = "Hello, World!"
+```
+In Curve would be:
+```
+==> var x = id("myElement")
+==> x.value = "Hello, World!"
+```
+Which is in my opinion, a lot easier. 
+For detecting clicks, here's some JavaScript code:
+```
+let x = document.querySelector("#myButton");
+x.addEventListener("click", () => {
+    // Code Here
+});
+```
+In Curve is:
+```
+==> var x = id("myButton")
+==> x.on("click", func{ console.log("Hello, World!") })
+```
+
 ### Create Curve App
 
 Running `py create-curve-app` will bring up a menu to create a curve app in a new directory.
@@ -73,4 +100,4 @@ Running `py create-curve-app` will bring up a menu to create a curve app in a ne
 - [X] Better Documentation
 - [ ] Add option to disable opening in browser in config
 - [ ] Add option for live server in config
-      
+- [ ] CSS using `-->`
