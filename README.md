@@ -37,12 +37,16 @@ Windows:
 py curve app.crv
 ```
 
+### Create Curve App
+
+Running `py create-curve-app` will bring up a menu to create a curve app in a new directory.
+
 ---
 
 # Todo:
 - [ ] Add Javascript Dependencies via config file
 - [ ] Add CLI Flag to Specify Config File
-- [ ] `create-curve-app` command
+- [X] `create-curve-app` command
 - [ ] Compile curve to executable for better CLI access / pip module?
 - [ ] Add CSS Dependencies via config file
 - [ ] More config stuff in general
