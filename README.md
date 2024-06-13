@@ -22,3 +22,28 @@ project:
 ```
 
 Then your `app.crv` file is your editable code.
+
+### Running Files
+
+To run files, use python. 
+
+Linux/Mac:
+```
+python3 curve app.crv
+```
+
+Windows:
+```
+py curve app.crv
+```
+
+---
+
+# Todo:
+[ ] Add Javascript Dependencies via config file
+[ ] Add CLI Flag to Specify Config File
+[ ] `create-curve-app` command
+[ ] Compile curve to executable for better CLI access / pip module?
+[ ] Add CSS Dependencies via config file
+[ ] More config stuff in general
+[ ] Better Documentation
