@@ -37,6 +37,26 @@ Windows:
 py curve app.crv
 ```
 
+### Code Documentation
+
+To create elements, invoke the `%` selector.
+```
+%h1 "My Curve App"
+%p "This is a p tag with the classname of example." :class=example
+```
+
+To create attributes for elements, invoke the `:` selector.
+```
+%h1 "This is a red header." :class=redHeader
+%style "#redHeader { color: red; }"
+```
+
+For comments, simply put a `#`.
+
+```
+# This is a comment!
+```
+
 ### Create Curve App
 
 Running `py create-curve-app` will bring up a menu to create a curve app in a new directory.
@@ -50,7 +70,7 @@ Running `py create-curve-app` will bring up a menu to create a curve app in a ne
 - [ ] Compile curve to executable for better CLI access / pip module?
 - [ ] Add CSS Dependencies via config file
 - [ ] More config stuff in general
-- [ ] Better Documentation
+- [X] Better Documentation
 - [ ] Add option to disable opening in browser in config
 - [ ] Add option for live server in config
       
