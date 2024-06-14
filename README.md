@@ -117,7 +117,6 @@ In your `config.yaml` file you have different options.
 - [X] Add Javascript Dependencies via config file
 - [X] Add CLI Flag to Specify Config File
 - [X] `create-curve-app` command
-- [ ] Compile curve to executable for better CLI access / pip module?
 - [X] Add CSS Dependencies via config file
 - [X] More config stuff in general
 - [X] Better Documentation
