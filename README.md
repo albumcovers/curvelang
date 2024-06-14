@@ -29,12 +29,18 @@ To run files, use python. Download the `curve` file from the directory above and
 
 Linux/Mac:
 ```
-python3 curve app.crv
+python3 curve app.crvm config.yaml
 ```
 
 Windows:
 ```
-py curve app.crv
+py curve app.crv config.yaml
+```
+
+The command is basically:
+
+```
+<python-command> curve <your-curve-app> <your-config-file>
 ```
 
 ### Code Documentation
@@ -100,7 +106,7 @@ Running `py create-curve-app` will bring up a menu to create a curve app in a ne
 
 # Todo:
 - [ ] Add Javascript Dependencies via config file
-- [ ] Add CLI Flag to Specify Config File
+- [X] Add CLI Flag to Specify Config File
 - [X] `create-curve-app` command
 - [ ] Compile curve to executable for better CLI access / pip module?
 - [ ] Add CSS Dependencies via config file
