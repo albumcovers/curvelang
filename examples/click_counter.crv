@@ -1,6 +1,6 @@
 %h1 "Click Counter"
 %button "Start Clicking Me!" :id=button
 
-==> $button = id("button")
-==> $i = 0
+==> @button = id("button")
+==> @i = 0
 ==> button.on("click", func{ i++; button.value = i; })
