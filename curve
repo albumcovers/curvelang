@@ -27,7 +27,11 @@ for line in file.readlines():
             attribut_es += attribute
 
         if element_name != 'link' or element_name != 'br' or element_name != 'hr':
-            code += f'<{element_name} {attribut_es}>{content}</{element_name}>'
+            code += f'<{element_name} {attribut_es}>{content}</{element_name}>\n'
+    elif line.startswith('-->'):
+        line=line.strip()
+        line=line.replace('-->', '', 1)
+        code += f"<style>{line}</style>\n"
     elif line.startswith('==>'):
         line=line.strip()
         line=line.replace('==>','')
@@ -36,7 +40,7 @@ for line in file.readlines():
         line=line.replace(".value", '.innerHTML')
         line=line.replace('func{', '() => {')
         line=line.replace('$', 'var ')
-        code += f"<script>{line}</script>"
+        code += f"<script>{line}</script>\n"
         
 temp = f'''
 <!DOCTYPE html>
