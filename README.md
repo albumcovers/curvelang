@@ -108,4 +108,4 @@ Running `py create-curve-app` will bring up a menu to create a curve app in a ne
 - [X] Better Documentation
 - [ ] Add option to disable opening in browser in config
 - [ ] Add option for live server in config
-- [ ] CSS using `-->`
+- [X] CSS using `-->`
