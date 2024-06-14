@@ -1,6 +1,7 @@
 # Curve programming language
 
 import yaml
+import flask
 import sys
 import webbrowser
 import os
@@ -83,7 +84,7 @@ for line in file.readlines():
         line = line.replace('on(', 'addEventListener(')
         line = line.replace(".value", '.innerHTML')
         line = line.replace('func{', '() => {')
-        line = line.replace('$', 'var ')
+        line = line.replace('@', 'var ')
         code += f"<script>{line}</script>\n"
 
 # Add default CSS if not disabled
@@ -117,6 +118,13 @@ os.makedirs('dist', exist_ok=True)
 with open('dist/out.html', 'w') as out_file:
     out_file.write(temp)
 
+app=flask.Flask(__name__)
+@app.route('/')
+def index():
+    return flask.send_from_directory('dist', 'out.html')
+
 # Open the output HTML file in the default web browser
 if webbrowserOpen:
     webbrowser.open(os.path.join(dir_path, 'dist', 'out.html'))
+if liveServer:
+    app.run('localhost', port=1990, debug=True)
