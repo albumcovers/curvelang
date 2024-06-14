@@ -102,15 +102,24 @@ Styles are normal CSS. Shorthand coming soon!
 
 Running `py create-curve-app` will bring up a menu to create a curve app in a new directory.
 
+
+### Other Config Options
+
+In your `config.yaml` file you have different options.
+
+- `disableDefaultCSS` does exactly what it sounds like it does.
+- `cssDependencies` are a list of URLs with CSS dependencies. (Pairs great with `disableDefaultCSS`!)
+- `jsDependencies` are a list of URLs with JavaScript dependencies.
+
 ---
 
 # Todo:
-- [ ] Add Javascript Dependencies via config file
+- [X] Add Javascript Dependencies via config file
 - [X] Add CLI Flag to Specify Config File
 - [X] `create-curve-app` command
 - [ ] Compile curve to executable for better CLI access / pip module?
-- [ ] Add CSS Dependencies via config file
-- [ ] More config stuff in general
+- [X] Add CSS Dependencies via config file
+- [X] More config stuff in general
 - [X] Better Documentation
 - [ ] Add option to disable opening in browser in config
 - [ ] Add option for live server in config
