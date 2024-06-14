@@ -18,15 +18,16 @@ for line in file.readlines():
         element_name = line.split(' ')[0]
         content = line.split('"')[1]
         attribut_es = ""
-        rest_of_line = line.split(content + "\" ")
-        attributes = rest_of_line[-1].split(':')
+        rest_of_line = line.split(content + " ")
+        print(rest_of_line)
+        attributes = rest_of_line[0].split(':')
+        if attributes[0] == rest_of_line[0]:
+            attributes = []
         for attribute in attributes:
             attribut_es += attribute
 
         if element_name != 'link' or element_name != 'br' or element_name != 'hr':
             code += f'<{element_name} {attribut_es}>{content}</{element_name}>'
-    elif line.startswith('-->'):
-        code += f"<style>{line.replace("-->", "")}</style>"
     elif line.startswith('==>'):
         line=line.strip()
         line=line.replace('==>','')
