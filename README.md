@@ -86,7 +86,7 @@ x.addEventListener("click", () => {
 ```
 In Curve is:
 ```
-==> var x = id("myButton")
+==> @x = id("myButton")
 ==> x.on("click", func{ console.log("Hello, World!") })
 ```
 
